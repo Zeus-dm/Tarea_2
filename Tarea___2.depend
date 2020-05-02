@@ -56,3 +56,61 @@
 	"TDA/Mapa.h"
 	"TDA/Nodo.h"
 
+1588416842 source:c:\users\rafa\desktop\progra_u\tarea___2\funmain.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"TDA/Mapa.h"
+	"TDA/Nodo.h"
+	"TDA/Lista.h"
+
+1588416842 c:\users\rafa\desktop\progra_u\tarea___2\tda\mapa.h
+
+1588416842 c:\users\rafa\desktop\progra_u\tarea___2\tda\nodo.h
+
+1588416842 c:\users\rafa\desktop\progra_u\tarea___2\tda\lista.h
+	"Nodo.h"
+
+1588416842 source:c:\users\rafa\desktop\progra_u\tarea___2\main.c
+	<stdio.h>
+	<string.h>
+	<conio.h>
+	"Menu.h"
+	"funMain.h"
+	"TDA/Mapa.h"
+	"TDA/Nodo.h"
+	"TDA/Lista.h"
+
+1588416842 c:\users\rafa\desktop\progra_u\tarea___2\menu.h
+
+1588416842 c:\users\rafa\desktop\progra_u\tarea___2\funmain.h
+	"TDA/Mapa.h"
+	"TDA/Nodo.h"
+	"TDA/Lista.h"
+
+1588416842 source:c:\users\rafa\desktop\progra_u\tarea___2\menu.c
+	<stdio.h>
+	<conio.h>
+	"Menu.h"
+
+1588416842 source:c:\users\rafa\desktop\progra_u\tarea___2\tda\lista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Nodo.h"
+	"Lista.h"
+
+1588416842 source:c:\users\rafa\desktop\progra_u\tarea___2\tda\mapa.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"Mapa.h"
+
+1588416842 source:c:\users\rafa\desktop\progra_u\tarea___2\tda\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Nodo.h"
+
