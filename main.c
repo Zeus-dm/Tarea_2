@@ -19,10 +19,14 @@ void MostrarTodosProductos( Mapa* B_NOMBRES );
 void BuscarNombre( Mapa* B_NOMBRES );
 void BuscarLista( Mapa* MAPA, int flag );
 
+void AgregarCarrito( Lista* CARRITOS, Mapa* B_NOMBRES );
+void ConcretarCompra( Lista* CARRITOS, Mapa* B_NOMBRES, Mapa* B_MARCAS, Mapa* B_TIPOS);
+
 int main(void){
     Mapa* B_NOMBRES = crearMapa( max);
     Mapa* B_MARCAS = crearMapa( max);
     Mapa* B_TIPOS = crearMapa( max);
+    Lista* CARRITOS = crearLista();
 
     int opcion=0;
 
@@ -49,11 +53,11 @@ int main(void){
             break;
             case 5:
                 system("cls");
-
+                AgregarCarrito( CARRITOS, B_NOMBRES);
             break;
             case 6:
                 system("cls");
-
+                ConcretarCompra( CARRITOS, B_NOMBRES, B_MARCAS, B_TIPOS);
             break;
         }
 
@@ -194,16 +198,27 @@ void BuscarLista( Mapa* MAPA, int flag ){
 
 //------------------------------------------------------------------------
 
+void AgregarCarrito( Lista* CARRITOS, Mapa* B_NOMBRES ){
+    char N_carrito[MAX], N_producto[MAX];
+    printf("\n\t\tAGREGAR PRODUCTO AL CARRITO\n\n\n");
+    printf("\t Nombre del Carrito   : ");
+    gets(N_carrito);
+    printf("\t Nombre del Producto  : ");
+    gets(N_producto);
 
+    InsertListCarritos( CARRITOS, B_NOMBRES, N_carrito, N_producto);
 
+    Espera();
+}
 
+void ConcretarCompra( Lista* CARRITOS, Mapa* B_NOMBRES, Mapa* B_MARCAS, Mapa* B_TIPOS){
+    char N_carrito[MAX];
+    printf("\n\t\tCONCRETAR COMPRA\n\n\n");
+    printf("\t Nombre del Carrito   : ");
+    gets(N_carrito);
 
+    ConcretarCarrito( CARRITOS, B_NOMBRES, B_MARCAS, B_TIPOS, N_carrito);
 
-
-
-
-
-
-
-
+    Espera();
+}
 

@@ -5,6 +5,13 @@
 #include "TDA/Nodo.h"
 #include "TDA/Lista.h"
 
+typedef struct{
+    char NombreC[MAX];
+    Lista* Productos;
+}Carritos;
+
+//---------------------------------------------------------------------
+
 /** Escribe una opcion(Atas), hasta que el usuario aprete enter o esc */
 void Espera();
 
@@ -24,5 +31,18 @@ void Verificar( Mapa* B_NOMBRES, Mapa* B_MARCAS, Mapa* B_TIPOS, char* nombre, ch
 
 //---------------------------------------------------------------------
 
+void DeleteMapaNombre( Mapa* B_NOMBRES, Producto* product );
+
+//---------------------------------------------------------------------
+/** Crea un carrito */
+Carritos* crearCarritos( char* nombreC , Lista* lista);
+
+/** retorna el carrito con el nombre */
+void* stringSearchListCarrito( Lista* L, const char* ID);
+
+/** Inserta los productos en su carrito respectivo */
+void InsertListCarritos( Lista* CARRITOS, Mapa* B_NOMBRES, char* N_carrito, char* N_producto);
+
+void ConcretarCarrito( Lista* CARRITOS, Mapa* B_NOMBRES, Mapa* B_MARCAS, Mapa* B_TIPOS, char* N_carrito);
 
 #endif // FUNMAIN_H

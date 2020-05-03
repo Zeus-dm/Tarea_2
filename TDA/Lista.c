@@ -51,7 +51,7 @@ void deleteCurrentL( Lista* L){
             L->current = NULL;
             L->last = NULL;
         }else{
-            L->head = auxN->prev;
+            L->head = auxN->next;
             L->head->prev = NULL;
         }
     }else if( auxN->next == NULL){
@@ -67,10 +67,30 @@ void deleteCurrentL( Lista* L){
     L->total--;
 }
 
-void deleteL( Lista* L){
-    while( L->head != NULL){
+
+void deleteL ( Lista *L ){
+    if(L->head != NULL){
         L->current = L->head;
-        deleteCurrentL( L );
+        while(L->current != NULL){
+            deleteCurrentL( L );
+            L->current = L->head;
+        }
     }
     free( L );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
