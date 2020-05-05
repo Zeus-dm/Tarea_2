@@ -22,7 +22,7 @@ typedef struct{
 Nodo* crearNodo( void* data);
 
 /** genera un Producto */
-Producto* crearProducto( char* nombre, char* marca, char* tipo , long stock, long precio );
+Producto* crearProducto( const char* nombre, const char* marca, const char* tipo , long stock, long precio );
 
 
 #endif // NODO_H

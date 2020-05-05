@@ -61,7 +61,7 @@ void InsertMapaLista ( Mapa* MAPA, Producto* product , char* key ){
     }
 }
 
-void Verificar( Mapa* B_NOMBRES, Mapa* B_MARCAS, Mapa* B_TIPOS, char* nombre, char* marca, char* tipo, long stock, long precio, int flag){
+void Verificar( Mapa* B_NOMBRES, Mapa* B_MARCAS, Mapa* B_TIPOS, const char* nombre, const char* marca, const char* tipo, long stock, long precio, int flag){
     if( (strcmp( nombre, "")!=0) && (strcmp( marca, "")!=0) && (strcmp( tipo, "")!=0) && (stock != -1) && (precio != -1) ){
         Producto* product = crearProducto( nombre, marca, tipo, stock, precio);
         InsertMapaNombres( B_NOMBRES, product);
@@ -116,7 +116,7 @@ void* stringSearchListCarrito( Lista* L, const char* ID){
 void InsertListCarritos( Lista* CARRITOS, Mapa* B_NOMBRES, char* N_carrito, char* N_producto ){
     Producto* auxP = searchMap( B_NOMBRES, N_producto);
     if( auxP == NULL ){
-        printf("\n     El Producto NO Existe");
+        printf("\n     Producto NO Existe");
     }else{
         Carritos* auxC = stringSearchListCarrito( CARRITOS, N_carrito);
         if( auxC ==  NULL ){
@@ -128,6 +128,7 @@ void InsertListCarritos( Lista* CARRITOS, Mapa* B_NOMBRES, char* N_carrito, char
             Lista* auxL = auxC->Productos;
             pushBackL( auxL, auxP);
         }
+        printf("\n     Producto agregado Correctamente");
     }
 }
 
@@ -135,7 +136,7 @@ void ConcretarCarrito( Lista* CARRITOS, Mapa* B_NOMBRES, Mapa* B_MARCAS, Mapa* B
     long sumaT = 0;
     Carritos* auxC = stringSearchListCarrito( CARRITOS, N_carrito);
     if( auxC == NULL ){
-        printf("\n     El Carrito NO Existe");
+        printf("\n     Carrito NO Existe");
     }else{
         Lista* auxL = auxC->Productos;
         Producto* auxP = firstL( auxL);

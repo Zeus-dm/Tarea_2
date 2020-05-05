@@ -12,7 +12,7 @@ Nodo* crearNodo( void* data){
     return nuevoNodo;
 }
 
-Producto* crearProducto( char* nombre, char* marca, char* tipo , long stock, long precio ){
+Producto* crearProducto( const char* nombre, const char* marca, const char* tipo , long stock, long precio ){
     Producto* newP = (Producto*)malloc(sizeof(Producto));
     strcpy( newP->Nombre, nombre);
     strcpy( newP->Marca, marca);

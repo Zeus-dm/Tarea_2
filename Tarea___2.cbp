@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="CSV.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="CSV.h" />
 		<Unit filename="Menu.c">
 			<Option compilerVar="CC" />
 		</Unit>

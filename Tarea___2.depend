@@ -56,7 +56,7 @@
 	"TDA/Mapa.h"
 	"TDA/Nodo.h"
 
-1588473248 source:c:\users\rafa\desktop\progra_u\tarea___2\funmain.c
+1588649008 source:c:\users\rafa\desktop\progra_u\tarea___2\funmain.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -68,24 +68,25 @@
 
 1588416842 c:\users\rafa\desktop\progra_u\tarea___2\tda\mapa.h
 
-1588416842 c:\users\rafa\desktop\progra_u\tarea___2\tda\nodo.h
+1588649115 c:\users\rafa\desktop\progra_u\tarea___2\tda\nodo.h
 
 1588416842 c:\users\rafa\desktop\progra_u\tarea___2\tda\lista.h
 	"Nodo.h"
 
-1588475383 source:c:\users\rafa\desktop\progra_u\tarea___2\main.c
+1588652834 source:c:\users\rafa\desktop\progra_u\tarea___2\main.c
 	<stdio.h>
 	<string.h>
 	<conio.h>
 	"Menu.h"
 	"funMain.h"
+	"CSV.h"
 	"TDA/Mapa.h"
 	"TDA/Nodo.h"
 	"TDA/Lista.h"
 
 1588416842 c:\users\rafa\desktop\progra_u\tarea___2\menu.h
 
-1588476673 c:\users\rafa\desktop\progra_u\tarea___2\funmain.h
+1588649051 c:\users\rafa\desktop\progra_u\tarea___2\funmain.h
 	"TDA/Mapa.h"
 	"TDA/Nodo.h"
 	"TDA/Lista.h"
@@ -109,9 +110,17 @@
 	<math.h>
 	"Mapa.h"
 
-1588473144 source:c:\users\rafa\desktop\progra_u\tarea___2\tda\nodo.c
+1588649115 source:c:\users\rafa\desktop\progra_u\tarea___2\tda\nodo.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"Nodo.h"
+
+1586318478 source:c:\users\rafa\desktop\progra_u\tarea___2\csv.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"CSV.h"
+
+1586318480 c:\users\rafa\desktop\progra_u\tarea___2\csv.h
 
